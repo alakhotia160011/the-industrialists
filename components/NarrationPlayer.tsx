@@ -1,8 +1,13 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Status = "idle" | "loading" | "playing" | "paused" | "error";
+
+// App-wide: at most one narration plays at a time. Plain Audio objects live
+// outside React, so without this a clip keeps playing after you navigate away
+// and a second profile's clip would overlap it.
+let currentlyPlaying: HTMLAudioElement | null = null;
 
 export default function NarrationPlayer({
   slug,
@@ -15,6 +20,22 @@ export default function NarrationPlayer({
   const audioRef = useRef<HTMLAudioElement | null>(null);
   // Cache the generated audio URL so replays are instant (no second request).
   const urlRef = useRef<string | null>(null);
+
+  // Stop and clean up this player's audio when the component unmounts (e.g. the
+  // user navigates back to the homepage), so it can't keep playing in the void.
+  useEffect(() => {
+    return () => {
+      const audio = audioRef.current;
+      if (audio) {
+        audio.pause();
+        if (currentlyPlaying === audio) currentlyPlaying = null;
+      }
+      if (urlRef.current) {
+        URL.revokeObjectURL(urlRef.current);
+        urlRef.current = null;
+      }
+    };
+  }, []);
 
   async function ensureAudio(): Promise<HTMLAudioElement> {
     if (audioRef.current && urlRef.current) return audioRef.current;
@@ -34,11 +55,17 @@ export default function NarrationPlayer({
     urlRef.current = url;
 
     const audio = new Audio(url);
-    audio.addEventListener("ended", () => setStatus("idle"));
+    audio.addEventListener("ended", () => {
+      setStatus("idle");
+      if (currentlyPlaying === audio) currentlyPlaying = null;
+    });
     audio.addEventListener("pause", () => {
       if (!audio.ended) setStatus("paused");
     });
-    audio.addEventListener("play", () => setStatus("playing"));
+    audio.addEventListener("play", () => {
+      setStatus("playing");
+      currentlyPlaying = audio;
+    });
     audioRef.current = audio;
     return audio;
   }
@@ -50,6 +77,11 @@ export default function NarrationPlayer({
         return;
       }
       const audio = await ensureAudio();
+      // Halt any narration playing elsewhere in the app before starting this one.
+      if (currentlyPlaying && currentlyPlaying !== audio) {
+        currentlyPlaying.pause();
+      }
+      currentlyPlaying = audio;
       await audio.play();
     } catch (err) {
       console.error(err);
