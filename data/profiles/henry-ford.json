@@ -1,0 +1,200 @@
+{
+  "slug": "henry-ford",
+  "headline": "The Michigan farm boy who refused to invent the automobile, and instead invented the world that could afford one.",
+  "overview": "Henry Ford neither invented the automobile nor the assembly line, and he was not even first to the gasoline car in Detroit [2]. What he did was rarer and more consequential: he fixed on a single idea — a sturdy, cheap, universal car — and bent an entire system of production, wages, and prices around it until the motorcar passed from rich man's plaything to the common possession of working America [1][2]. When the Ford Motor Company was incorporated on June 16, 1903, it was one of dozens of fragile Detroit start-ups, capitalized at $28,000 in cash from a handful of investors including the coal dealer Alexander Malcomson and the machinist Dodge brothers [2][7].\n\nThe instrument of the revolution was the Model T, introduced in October 1908: high-clearance, unkillable, and engineered to be repaired by a farmer with baling wire [2]. Ford's genius was to treat price reduction not as a sacrifice but as a flywheel — every cut in cost widened the market, and every widening of the market lowered the cost again [1]. In 1913 his engineers at the Highland Park plant set the chassis moving past stationary workers on a powered line, and the time to assemble a car collapsed from more than twelve hours to roughly ninety minutes [1][5]. The T's price fell year after year, from over $800 to under $300, and by the time production ended in 1927 the company had built some fifteen million of them [2].\n\nThen, on January 5, 1914, Ford did the thing that made him a world figure overnight. The company announced it would pay $5 for an eight-hour day — roughly double the prevailing wage and a shortened shift — to the workers who manned the line [5]. The press treated it as either madness or messianism; in fact it was a hard-nosed fix for a turnover crisis so severe that Ford had to hire some 52,000 men a year to keep about 14,000 jobs filled [2][5]. The five-dollar day cut quit rates, bought labor peace, and — not least — turned Ford's own workers into Ford's own customers [1][2].\n\nThe same monomania that built the empire nearly wrecked it. Ford clung to the unchanging Model T as General Motors seduced buyers with color, style, and the annual model change, and by the mid-1920s the T was a fossil; the abrupt 1927 shutdown to retool for the Model A idled the company for months [2][7]. Worse, Ford used his fame and his newspaper, the Dearborn Independent, to publish years of antisemitic propaganda, later bound as The International Jew, until a libel suit and public pressure forced a humiliating 1927 apology [2][7]. He fought the unions longest and hardest of the Detroit makers, his service-department enforcers beating organizers in the open until Ford became the last major automaker to sign with the UAW, in 1941 [2][7].\n\nFord was a tangle of contradictions — pacifist and bully, populist and autocrat, mechanical visionary and crank — but the core insight survived all of it [2]. Standardized parts, flow production, and high wages tied to high volume became the template for twentieth-century industry, exported worldwide under a name coined from his own: Fordism [1][2]."
+,
+  "earlyLife": "He was born July 30, 1863, on a prosperous farm in Springwells (Greenfield) Township, Wayne County, Michigan, the eldest surviving child of William Ford, an Irish-immigrant farmer, and Mary Litogot Ford [2]. The land bored him and the machinery did not. The story his biographers return to is the boy who, at thirteen, saw a self-propelled steam traction engine lumbering down a road and leapt from his father's wagon to interrogate the operator — a moment Ford himself dated as the start of his life's obsession [2][8]. He repaired neighbors' watches by lamplight and left the farm for Detroit at sixteen to apprentice as a machinist [2].\n\nIn 1891 he joined the Edison Illuminating Company, rising to chief engineer by 1893 — a post that left his nights free to build a gasoline \"Quadricycle,\" which he drove out of a rented brick shed in 1896 [2][8]. A brief, encouraging meeting with Thomas Edison, who told the young man to keep at it, became one of Ford's cherished memories [8]. His first two ventures failed: the Detroit Automobile Company (1899) collapsed, and the Henry Ford Company (1901) he abandoned after a falling-out, leaving behind only his name on a firm that became Cadillac [2][7]. He was forty years old, twice-failed, and largely unknown when the Ford Motor Company opened for business in 1903 [2]."
+,
+  "timeline": [
+    { "year": "1863", "event": "Born July 30 on a farm in Greenfield Township, Wayne County, Michigan [2]." },
+    { "year": "1879", "event": "Leaves the farm for Detroit to apprentice as a machinist [2]." },
+    { "year": "1891", "event": "Joins the Edison Illuminating Company, becoming chief engineer in 1893 [2]." },
+    { "year": "1896", "event": "Builds and drives his first car, the Quadricycle, from a shed behind his home [2][8]." },
+    { "year": "1903", "event": "Incorporates the Ford Motor Company on June 16 with a small group of investors [2][7]." },
+    { "year": "1908", "event": "Introduces the Model T in October [2]." },
+    { "year": "1913", "event": "Installs the moving assembly line at Highland Park, cutting chassis assembly from over 12 hours to about 90 minutes [1][5]." },
+    { "year": "1914", "event": "Announces the $5, eight-hour day on January 5, doubling prevailing wages [5]." },
+    { "year": "1915", "event": "Sails the \"Peace Ship\" Oscar II to Europe in a failed bid to end World War I [2]." },
+    { "year": "1919", "event": "Buys out his minority shareholders for some $106 million after the Dodge v. Ford ruling, taking total control [6][7]." },
+    { "year": "1919–1927", "event": "Publishes antisemitic articles in the Dearborn Independent; issues a public apology in 1927 [2][7]." },
+    { "year": "1927", "event": "Ends Model T production after about 15 million cars and retools for the Model A [2]." },
+    { "year": "1937", "event": "Ford security men beat UAW organizers at the \"Battle of the Overpass\" at the Rouge plant [2][7]." },
+    { "year": "1941", "event": "Signs Ford's first contract with the UAW — the last major automaker to do so [2][7]." },
+    { "year": "1947", "event": "Dies April 7 at his Fair Lane estate in Dearborn [2]." }
+  ],
+  "keyVentures": [
+    {
+      "title": "The Model T (1908)",
+      "detail": "A deliberately plain, durable, repairable car aimed at \"the great multitude.\" Relentless process improvement let Ford cut the price repeatedly while volume soared, until roughly half the cars on earth were Model Ts [2]."
+    },
+    {
+      "title": "The moving assembly line (1913)",
+      "detail": "Borrowing the disassembly logic of Chicago meatpacking and the flow of flour milling, Ford's engineers brought the work to the worker at Highland Park. Assembly time fell by an order of magnitude and the unit cost with it — the defining method of mass production [1][5]."
+    },
+    {
+      "title": "The five-dollar day (1914)",
+      "detail": "Doubling the wage to $5 for an eight-hour shift solved a ruinous turnover problem and bought labor peace. It came paired with a paternalistic \"Sociological Department\" that inspected workers' homes and habits to certify them for the full wage [2][5]."
+    },
+    {
+      "title": "The River Rouge complex",
+      "detail": "Ford's vast Dearborn works pursued total vertical integration — iron ore and rubber in one end, finished cars out the other — embodying his belief that controlling the whole chain controlled the cost [2][7]."
+    },
+    {
+      "title": "Taking total control (1919)",
+      "detail": "After the Dodge brothers sued over withheld dividends, Ford bought out every minority shareholder for about $106 million, making the company wholly his own and free of outside checks — for better and worse [6][7]."
+    }
+  ],
+  "excerpts": [
+    {
+      "text": "Any customer can have a car painted any colour that he wants so long as it is black.",
+      "attribution": "Henry Ford, My Life and Work (1922), p. 72",
+      "sourceId": 3
+    },
+    {
+      "text": "History is more or less bunk. It's tradition. We don't want tradition. We want to live in the present, and the only history that is worth a tinker's damn is the history we make today.",
+      "attribution": "Henry Ford, interviewed by Charles N. Wheeler, Chicago Tribune, May 25, 1916",
+      "sourceId": 4
+    },
+    {
+      "text": "A business corporation is organized and carried on primarily for the profit of the stockholders. The powers of the directors are to be employed for that end.",
+      "attribution": "Michigan Supreme Court (Ostrander, J.), Dodge v. Ford Motor Co., 1919",
+      "sourceId": 6
+    }
+  ],
+  "lessons": [
+    {
+      "title": "Price and volume are one machine, not two",
+      "detail": "Ford treated cost reduction as a flywheel: a lower price enlarged the market, a larger market lowered the cost, and the cycle repeated. He priced to grow the market, not to maximize today's margin."
+    },
+    {
+      "title": "Pay can be an operating decision, not charity",
+      "detail": "The five-dollar day looked like generosity and read in the press as benevolence, but it was a fix for a turnover crisis that was quietly destroying productivity — and it turned workers into customers."
+    },
+    {
+      "title": "Yesterday's winning bet becomes tomorrow's blind spot",
+      "detail": "Loyalty to the unchanging Model T handed General Motors the future of styling and choice. Confusing a past success for a permanent one nearly cost Ford the company he had built."
+    },
+    {
+      "title": "Absolute control removes the people who could have saved you",
+      "detail": "Buying out every shareholder freed Ford from interference — and from correction. With no board to check him, his worst instincts on the union, the press, and the product ran unopposed."
+    }
+  ],
+  "legacy": "Ford's methods outlived his prejudices. Standardized, interchangeable parts moving on a powered line, paired with wages high enough to create the very mass market the line required, became the organizing logic of twentieth-century manufacturing — so dominant that observers from Aldous Huxley to Antonio Gramsci simply called the age \"Fordism\" [1][2]. The mobility he unleashed rebuilt American geography, scattering cities into suburbs and rewiring how ordinary people worked, courted, and traveled [2].\n\nHistorians today render a split verdict, and the best biographies insist on holding both halves at once [2][7]. Ford was a mechanical and managerial visionary who genuinely widened the material lives of millions, and he was a vindictive autocrat whose antisemitic campaign earned him praise from Adolf Hitler and whose anti-union violence shamed his own company [2][7]. The Henry Ford museum and the Ford Foundation he seeded are part of the inheritance; so is the cautionary example of a founder whose absolute control let his worst ideas go unchecked [2][5]."
+,
+  "notableQuote": {
+    "quote": "I will build a motor car for the great multitude. It will be large enough for the family but small enough for the individual to run and care for.",
+    "context": "Henry Ford, stating the founding ambition of the Model T, in his memoir My Life and Work (1922)."
+  },
+  "narrationScript": "Henry Ford didn't invent the car — he invented the idea that everyone could own one. He was a twice-failed, forty-year-old machinist when the Ford Motor Company opened in 1903. Then came the Model T: plain, tough, and built so efficiently that the price kept falling and falling, until Ford had sold fifteen million of them. In 1913 he set the assembly line moving at Highland Park, and the time to build a car dropped from half a day to about ninety minutes. A year later he stunned the world by doubling his workers' pay to five dollars a day — partly so they could afford the very cars they were building. But the same stubbornness that built the empire nearly broke it. He clung to the Model T too long, fought the unions with his fists, and used his newspaper to spread ugly antisemitism he later had to apologize for. Henry Ford put the world on wheels — and wrote the playbook, and the warnings, for modern industry.",
+  "sources": [
+    {
+      "id": 1,
+      "type": "book",
+      "title": "Ford: The Times, the Man, the Company",
+      "author": "Allan Nevins and Frank Ernest Hill",
+      "publisher": "Charles Scribner's Sons",
+      "year": "1954",
+      "url": "https://archive.org/details/fordtimesmancomp0000nevi"
+    },
+    {
+      "id": 2,
+      "type": "book",
+      "title": "The People's Tycoon: Henry Ford and the American Century",
+      "author": "Steven Watts",
+      "publisher": "Alfred A. Knopf",
+      "year": "2005",
+      "url": "https://archive.org/details/peoplestycoonhen00watt"
+    },
+    {
+      "id": 3,
+      "type": "book",
+      "title": "My Life and Work",
+      "author": "Henry Ford with Samuel Crowther",
+      "publisher": "Doubleday, Page & Company",
+      "year": "1922",
+      "pages": "p. 72, ch. IV",
+      "url": "https://archive.org/details/mylifework00forduoft"
+    },
+    {
+      "id": 4,
+      "type": "newspaper",
+      "title": "\"Henry Ford: Mechanical Genius\" (interview, pt. 3) — \"History is more or less bunk\"",
+      "author": "Charles N. Wheeler",
+      "publisher": "Chicago Tribune",
+      "year": "May 25, 1916"
+    },
+    {
+      "id": 5,
+      "type": "archive",
+      "title": "Ford's Five-Dollar Day",
+      "publisher": "The Henry Ford (museum)",
+      "year": "1914",
+      "url": "https://www.thehenryford.org/explore/blog/fords-five-dollar-day/"
+    },
+    {
+      "id": 6,
+      "type": "archive",
+      "title": "Dodge v. Ford Motor Co., 204 Mich. 459, 170 N.W. 668",
+      "author": "Michigan Supreme Court (Ostrander, J.)",
+      "publisher": "Justia — Michigan Supreme Court Decisions",
+      "year": "1919",
+      "url": "https://law.justia.com/cases/michigan/supreme-court/1919/204-mich-459-170-n-w-668-1919.html"
+    },
+    {
+      "id": 7,
+      "type": "book",
+      "title": "Wheels for the World: Henry Ford, His Company, and a Century of Progress",
+      "author": "Douglas Brinkley",
+      "publisher": "Viking",
+      "year": "2003",
+      "url": "https://archive.org/details/wheelsforworldhe0000brin"
+    },
+    {
+      "id": 8,
+      "type": "book",
+      "title": "I Invented the Modern Age: The Rise of Henry Ford",
+      "author": "Richard Snow",
+      "publisher": "Scribner",
+      "year": "2013"
+    }
+  ],
+  "furtherReading": [
+    {
+      "author": "Allan Nevins and Frank Ernest Hill",
+      "title": "Ford (3 vols.: The Times, the Man, the Company; Expansion and Challenge; Decline and Rebirth)",
+      "year": "1954–1963",
+      "note": "The monumental, document-grounded scholarly history of Ford and his company — still the foundation everyone else builds on."
+    },
+    {
+      "author": "Steven Watts",
+      "title": "The People's Tycoon: Henry Ford and the American Century",
+      "year": "2005",
+      "note": "The most useful single-volume modern biography, integrating Ford the industrialist with Ford the cultural phenomenon."
+    },
+    {
+      "author": "Douglas Brinkley",
+      "title": "Wheels for the World: Henry Ford, His Company, and a Century of Progress",
+      "year": "2003",
+      "note": "A sweeping company-and-man history from a leading popular historian, strong on the Rouge and the labor wars."
+    },
+    {
+      "author": "Richard Snow",
+      "title": "I Invented the Modern Age: The Rise of Henry Ford",
+      "year": "2013",
+      "note": "A vivid, narrative account focused on the early years and the making of the Model T."
+    },
+    {
+      "author": "Robert Lacey",
+      "title": "Ford: The Men and the Machine",
+      "year": "1986",
+      "note": "A highly readable family-and-business saga spanning Henry through Henry Ford II."
+    },
+    {
+      "author": "Henry Ford with Samuel Crowther",
+      "title": "My Life and Work",
+      "year": "1922",
+      "note": "Ford in his own (ghost-assisted) words — essential primary source, and a window into the myth he wished to project."
+    }
+  ],
+  "generatedAt": "2026-06-06T00:00:00.000Z"
+}

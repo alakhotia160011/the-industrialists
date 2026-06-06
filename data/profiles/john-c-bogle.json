@@ -1,0 +1,211 @@
+{
+  "slug": "john-c-bogle",
+  "headline": "The fund manager who got fired, then built a company designed so that no one could ever get rich running it — and handed the savings back to ordinary investors.",
+  "overview": "John Clifton Bogle did not invent the index fund as a piece of mathematics — academics had argued for years that the average dollar could not beat the market average after costs [2][4]. What he did was rarer and far more consequential: he turned that cold insight into an institution, and then built a company whose entire structure was engineered to keep the savings for the investors rather than the managers [1][2]. The radical move was not really the index fund at all; it was the ownership scheme he wrapped around it — a mutual-fund company owned by its own funds, run \"at cost,\" with no outside stockholders to enrich [1][6].\n\nThe idea was hiding in plain sight in his own past. As a Princeton senior in 1951 he wrote a thesis, \"The Economic Role of the Investment Company,\" arguing that mutual funds should be run in the most efficient, honest, and economical way possible, that costs should be cut to the bone, and that funds \"can make no claim to superiority over the market averages\" [4][7]. That thesis won him a job from Walter L. Morgan, founder of the Wellington Fund, who became his mentor [2][4]. Bogle rose to run Wellington Management by the mid-1960s — and nearly destroyed it [2][7].\n\nTrying to inject growth into a sleepy balanced-fund shop, Bogle engineered a 1966 merger with a group of Boston \"go-go\" managers — Thorndike, Doran, Paine & Lewis, who ran the hot Ivest Fund [1][7]. When the 1973–74 bear market arrived, the speculative funds collapsed and Wellington Management's own stock fell from roughly $50 a share to about $4.25 [1][7]. His new partners, who held voting control, turned on him, and on January 23, 1974, the board fired him as chief executive [1][7]. Bogle later called the merger the worst mistake of his career — and also the luckiest [7].\n\nFired but not finished, Bogle exploited a structural quirk: the mutual funds had their own boards, legally distinct from the management company that ran them [1][7]. He persuaded those fund directors to let the funds take over their own administration. The new entity was incorporated on September 24, 1974, and christened Vanguard after HMS Vanguard, Admiral Nelson's flagship at the 1798 Battle of the Nile [1][2]. Vanguard would be owned by the funds, which were owned by the shareholders; profits would be returned as lower costs, not paid out to anyone [1][6].\n\nWith that structure in place, the index fund became inevitable. In 1976 Bogle launched the First Index Investment Trust, the first index mutual fund for ordinary investors [2][3]. The underwriting was a flop — he had hoped for as much as $150 million and raised about $11.3 million — and Wall Street dubbed it \"Bogle's Folly\" [3][5]. When the bankers proposed handing the money back, Bogle refused [3][5]. From that snubbed beginning grew, over the next four decades, a firm overseeing trillions of dollars and a movement that drove the cost of investing toward zero [1][8].\n\nBogle was a moralist as much as a businessman — combative, self-righteous, fond of casting himself as the lonely champion of the small investor against a rapacious Wall Street [1][8]. The same crusading certainty that built Vanguard's culture also fueled a long, bitter rivalry with the successor he had chosen, and a board that eventually declined to bend its retirement rules for its own founder [8]."
+,
+  "earlyLife": "He was born on May 8, 1929, in Montclair, New Jersey, one of identical twins, into a family that the Great Depression soon stripped of its comfort [2][9]. His father lost the family's money, and the boy learned thrift and self-reliance early; he never lost the conviction that money squandered was money stolen from its rightful owner [2][8]. A scholarship sent him to Blair Academy in New Jersey, where he excelled, and from there to Princeton [2][9].\n\nAt Princeton he set out to write an economics thesis on a subject no one had treated seriously. In December 1949 he read a Fortune article, \"Big Money in Boston,\" describing the small, fast-growing mutual-fund industry, and he had his topic [4][7]. The resulting 1951 thesis, \"The Economic Role of the Investment Company,\" laid down the principles he would preach for the rest of his life: funds existed to serve their shareholders, costs must be minimized, and no manager should promise to beat the market [4][7].\n\nThe thesis did more than earn him a magna cum laude degree. A copy reached Walter L. Morgan, the Princeton alumnus who had founded the Wellington Fund, and Morgan — impressed — hired the young man in 1951 [2][4]. Bogle would spend his entire career, for better and worse, inside the world that one Fortune article and one undergraduate thesis had opened to him [4][7]."
+,
+  "timeline": [
+    { "year": "1929", "event": "Born May 8 in Montclair, New Jersey, an identical twin, into a family soon hit hard by the Depression [2][9]." },
+    { "year": "1949", "event": "Reads Fortune's \"Big Money in Boston,\" choosing the mutual-fund industry as his thesis subject [4][7]." },
+    { "year": "1951", "event": "Graduates from Princeton; his thesis argues funds cannot beat the market and must cut costs. Walter Morgan hires him at Wellington [2][4][7]." },
+    { "year": "1965", "event": "Becomes head of Wellington Management, charged by Morgan with fixing the firm's stagnation [1][7]." },
+    { "year": "1966", "event": "Engineers a merger with Boston go-go managers Thorndike, Doran, Paine & Lewis, who control the Ivest Fund [1][7]." },
+    { "year": "1973–1974", "event": "The bear market guts the speculative funds; Wellington Management stock falls from about $50 to roughly $4.25 [1][7]." },
+    { "year": "1974", "event": "Fired as chief executive by the Wellington board on January 23 after his partners turn on him [1][7]." },
+    { "year": "1974", "event": "Persuades the fund directors to internalize administration; Vanguard is incorporated September 24, named for Nelson's flagship [1][2]." },
+    { "year": "1975", "event": "The SEC grants initial approval of the structure (Feb. 19); Vanguard begins operations with about $1.8 billion across 11 funds [1][7]." },
+    { "year": "1976", "event": "Launches the First Index Investment Trust, the first retail index fund; the underwriting raises only ~$11.3 million [2][3][5]." },
+    { "year": "1977", "event": "Drops sales loads, converting Vanguard to all no-load distribution sold directly to investors [1][7]." },
+    { "year": "1996", "event": "Hands the CEO title to John J. Brennan in January; receives a heart transplant on February 21 at age 66 [8]." },
+    { "year": "2000", "event": "Vanguard's board declines to waive its age-70 retirement rule for him; he founds the Bogle Financial Markets Research Center [8]." },
+    { "year": "2019", "event": "Dies January 16 at home in Bryn Mawr, Pennsylvania, age 89, with Vanguard overseeing trillions of dollars [8][9]." }
+  ],
+  "keyVentures": [
+    {
+      "title": "The Vanguard mutual structure (1974)",
+      "detail": "After his firing, Bogle had the Vanguard funds buy and own their own management and administrative company, run at cost with no outside shareholders. Profits that would have flowed to fund-company owners instead stayed with investors as ever-lower fees — the structural innovation that made everything else possible [1][6]."
+    },
+    {
+      "title": "First Index Investment Trust (1976)",
+      "detail": "The first index mutual fund for ordinary investors, designed to match the S&P 500 rather than beat it. Mocked as \"Bogle's Folly,\" its underwriting raised about $11.3 million against a $150 million hope; Bogle refused to give the money back and kept the fund alive [2][3][5]."
+    },
+    {
+      "title": "Going no-load (1977)",
+      "detail": "Vanguard abolished sales commissions and began selling its funds directly to the public, eliminating the broker's cut. Combined with the at-cost structure, it pushed the all-in cost of owning a fund toward the lowest in the industry [1][7]."
+    },
+    {
+      "title": "The Wellington merger (1966) — the cautionary venture",
+      "detail": "The deal that nearly ended his career: a tie-up with hot Boston managers that handed his new partners voting control. When the market turned, the speculative funds collapsed, the stock cratered, and the partners fired him. Bogle called it his worst mistake — and the accident that created Vanguard [1][7]."
+    },
+    {
+      "title": "Bogle Financial Markets Research Center (2000)",
+      "detail": "After the board declined to waive its retirement rule, Bogle built a perch from which he wrote, lectured, and campaigned against high fees and short-term speculation for nearly two more decades, becoming the conscience of the fund industry [8]."
+    }
+  ],
+  "excerpts": [
+    {
+      "text": "If a statue is ever erected to honor the person who has done the most for American investors, the hands-down choice should be Jack Bogle.",
+      "attribution": "Warren E. Buffett, Berkshire Hathaway 2016 Annual Letter to Shareholders (released February 25, 2017)",
+      "sourceId": 10
+    },
+    {
+      "text": "I rank this Bogle invention along with the invention of the wheel, the alphabet, Gutenberg printing, and wine and cheese: a mutual fund that never made Bogle rich but elevated the long-term returns of the mutual-fund owners. Something new under the sun.",
+      "attribution": "Paul A. Samuelson, on the index fund, quoted in CFA Institute, \"John C. Bogle: Profile of an Industry Leader\" (2017)",
+      "sourceId": 4
+    },
+    {
+      "text": "When the underwriters came to me and said, 'Let's give the money back,' I said, 'Hell no.'",
+      "attribution": "John C. Bogle, quoted in Jason Zweig, \"Birth of the Index Mutual Fund: 'Bogle's Folly' Turns 40,\" The Wall Street Journal, September 3, 2016",
+      "sourceId": 3
+    }
+  ],
+  "lessons": [
+    {
+      "title": "Structure beats good intentions",
+      "detail": "Plenty of managers promised to put clients first. Bogle made it impossible to do otherwise: by having the funds own the company and run it at cost, he built the investor's interest into the plumbing, so no future executive's greed could undo it."
+    },
+    {
+      "title": "Average, after costs, beats most",
+      "detail": "Bogle's whole edifice rested on a humble insight from his college thesis — that funds cannot reliably beat the market — and the arithmetic that low costs, not stock-picking genius, are the surest source of long-term return."
+    },
+    {
+      "title": "Your worst disaster can be your foundation",
+      "detail": "The merger that wrecked Wellington and got him fired was also the only reason Vanguard exists. Bogle turned a humiliating defeat into the opening to build something the old structure would never have allowed."
+    },
+    {
+      "title": "Persistence in the face of ridicule",
+      "detail": "The first index fund was an 'abject failure' at launch and a Wall Street joke. Bogle refused to hand the money back and stayed the course for years before the idea conquered the industry."
+    }
+  ],
+  "legacy": "Bogle's structural choice — to forgo a fortune by giving Vanguard's profits back to investors as lower fees — reshaped how the world saves. Index funds went from a snubbed experiment in 1976 to the default vehicle for retirement money, and the relentless downward pressure Vanguard put on costs is estimated to have saved investors enormous sums that would otherwise have gone to managers [1][8]. Warren Buffett, no easy man to impress, said that if a statue were ever built to the person who had done most for American investors, the choice should be Bogle [10].\n\nThe man himself was no saint, and never claimed to be a finished one. He was combative and self-righteous, and his certainty curdled into a long, public feud with John Brennan, the successor he had groomed; when Bogle hit Vanguard's mandatory retirement age, the board he had built declined to make an exception for him [8]. He spent his last two decades as the industry's gadfly and conscience, writing book after book against speculation and excess fees [8].\n\nHe died on January 16, 2019, at eighty-nine, having deliberately built a company that could never make its founder a billionaire — a choice almost unheard of in modern finance, and the truest measure of what he believed [6][8][9]."
+,
+  "notableQuote": {
+    "quote": "We must never underrate the power of compounding investment returns, and always avoid the tyranny of compounding investment costs.",
+    "context": "A distillation of Bogle's lifelong argument that fees, compounded over decades, quietly devour the investor's returns — from his final book, Stay the Course (2018)."
+  },
+  "narrationScript": "John Bogle's great idea didn't start as the index fund. It started with getting fired. As a young man he wrote a Princeton thesis arguing that mutual funds couldn't beat the market and should slash their costs. Years later, running Wellington Management, he made a disastrous merger, the market crashed, and his own partners pushed him out. But Bogle found a loophole. The funds had their own boards. So he convinced them to take over their own management and run it at cost — owned by the funds, owned by the investors, with no outside shareholders to enrich. He named the new company Vanguard, after Nelson's flagship. Then, in 1976, he launched the first index fund for ordinary people. Wall Street laughed and called it Bogle's Folly. It raised almost nothing. He refused to give the money back. Decades later, that snubbed little fund had grown into trillions of dollars, and Bogle had handed the savings back to millions of ordinary investors.",
+  "sources": [
+    {
+      "id": 1,
+      "type": "book",
+      "title": "Stay the Course: The Story of Vanguard and the Index Revolution",
+      "author": "John C. Bogle",
+      "publisher": "John Wiley & Sons",
+      "year": "2018",
+      "url": "https://www.wiley.com/en-us/Stay+the+Course:+The+Story+of+Vanguard+and+the+Index+Revolution-p-9781119404309"
+    },
+    {
+      "id": 2,
+      "type": "book",
+      "title": "The House that Bogle Built: How John Bogle and Vanguard Reinvented the Mutual Fund Industry",
+      "author": "Lewis Braham",
+      "publisher": "McGraw-Hill",
+      "year": "2011"
+    },
+    {
+      "id": 3,
+      "type": "newspaper",
+      "title": "Birth of the Index Mutual Fund: 'Bogle's Folly' Turns 40",
+      "author": "Jason Zweig",
+      "publisher": "The Wall Street Journal",
+      "year": "September 3, 2016",
+      "url": "https://jasonzweig.com/birth-of-the-index-mutual-fund-bogles-folly-turns-40/"
+    },
+    {
+      "id": 4,
+      "type": "journal",
+      "title": "John C. Bogle: Profile of an Industry Leader",
+      "author": "CFA Institute",
+      "publisher": "Financial Analysts Journal / CFA Institute Research and Policy Center",
+      "year": "2017",
+      "url": "https://rpc.cfainstitute.org/research/financial-analysts-journal/2017/john-c-bogle-profile-of-an-industry-leader"
+    },
+    {
+      "id": 5,
+      "type": "web",
+      "title": "50 years. 50 facts. Indexing since 1976.",
+      "author": "The Vanguard Group",
+      "publisher": "Vanguard (corporate)",
+      "year": "2026",
+      "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/50-years-50-facts-indexing-since-1976.html"
+    },
+    {
+      "id": 6,
+      "type": "book",
+      "title": "Common Sense on Mutual Funds: New Imperatives for the Intelligent Investor",
+      "author": "John C. Bogle",
+      "publisher": "John Wiley & Sons",
+      "year": "1999"
+    },
+    {
+      "id": 7,
+      "type": "archive",
+      "title": "Senior Thesis: \"The Economic Role of the Investment Company,\" 1950–1951 (John C. Bogle Papers)",
+      "author": "John C. Bogle",
+      "publisher": "Princeton University Library, Mudd Manuscript Library, Finding Aids",
+      "year": "1951",
+      "url": "https://findingaids.princeton.edu/catalog/MC206_c0087"
+    },
+    {
+      "id": 8,
+      "type": "newspaper",
+      "title": "A look at John Bogle's career (timeline)",
+      "author": "The Philadelphia Inquirer",
+      "publisher": "The Philadelphia Inquirer",
+      "year": "January 17, 2019",
+      "url": "https://www.inquirer.com/business/john-bogle-vanguard-timeline-20190117.html"
+    },
+    {
+      "id": 9,
+      "type": "newspaper",
+      "title": "John Bogle, Vanguard Group Inc. Founder, Dies at 89",
+      "author": "Associated Press / Time",
+      "publisher": "Time",
+      "year": "January 16, 2019",
+      "url": "https://time.com/5505143/john-bogle-dies-89/"
+    },
+    {
+      "id": 10,
+      "type": "archive",
+      "title": "Berkshire Hathaway 2016 Annual Letter to Shareholders",
+      "author": "Warren E. Buffett",
+      "publisher": "Berkshire Hathaway Inc.",
+      "year": "2017",
+      "url": "https://www.berkshirehathaway.com/letters/2016ltr.pdf"
+    }
+  ],
+  "furtherReading": [
+    {
+      "author": "John C. Bogle",
+      "title": "Stay the Course: The Story of Vanguard and the Index Revolution",
+      "year": "2018",
+      "note": "Bogle's last book and a first-person history of Vanguard, the firing, the structure, and the index fund — essential primary source from the founder himself."
+    },
+    {
+      "author": "John C. Bogle",
+      "title": "The Little Book of Common Sense Investing",
+      "year": "2007",
+      "note": "The clearest short statement of his investing creed: own the whole market, keep costs near zero, and stay the course."
+    },
+    {
+      "author": "Lewis Braham",
+      "title": "The House that Bogle Built: How John Bogle and Vanguard Reinvented the Mutual Fund Industry",
+      "year": "2011",
+      "note": "The fullest independent biography, tracing Bogle from college through the building of Vanguard and the feud with his successor."
+    },
+    {
+      "author": "John C. Bogle",
+      "title": "Common Sense on Mutual Funds",
+      "year": "1999",
+      "note": "His comprehensive manifesto on fund economics and the case for low-cost indexing, written at the height of the bull market he warned against."
+    },
+    {
+      "author": "Eric Balchunas",
+      "title": "The Bogle Effect: How John Bogle and Vanguard Turned Wall Street Inside Out and Saved Investors Trillions",
+      "year": "2022",
+      "note": "A data-rich modern assessment of how Vanguard's structure and indexing reshaped the entire money-management industry."
+    }
+  ],
+  "generatedAt": "2026-06-06T00:00:00.000Z"
+}

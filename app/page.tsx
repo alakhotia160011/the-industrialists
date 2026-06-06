@@ -1,65 +1,156 @@
-import Image from "next/image";
+import ProfileCard from "@/components/ProfileCard";
+import { getAllPeople, getPeopleBySector } from "@/lib/profiles";
 
 export default function Home() {
+  const groups = getPeopleBySector();
+  const people = getAllPeople();
+  const total = people.length;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="mx-auto max-w-6xl px-6 pb-28">
+      <Hero total={total} sectors={groups.length} people={people} />
+
+      {/* Catalogue: monospaced table of contents + filing cards, joined by a
+          patina-green spine running down the page. */}
+      <div className="mt-4 grid grid-cols-1 gap-10 md:grid-cols-[13rem_1fr]">
+        <TableOfContents groups={groups} />
+
+        <div className="md:border-l md:border-accent/30 md:pl-10">
+          {groups.map(({ sector, people }) => (
+            <section
+              key={sector}
+              id={slugifySector(sector)}
+              className="scroll-mt-8 border-t border-rule py-10 first:border-t-0 first:pt-0"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <div className="mb-6 flex items-baseline justify-between gap-4">
+                <h2 className="font-display text-2xl tracking-tight text-ink">
+                  {sector}
+                </h2>
+                <span className="font-mono text-[0.7rem] tracking-[0.2em] text-muted tabular-nums">
+                  {String(people.length).padStart(2, "0")} ENTRIES
+                </span>
+              </div>
+              <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                {people.map((person) => (
+                  <ProfileCard key={person.slug} person={person} />
+                ))}
+              </div>
+            </section>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
+
+      <footer className="mt-16 border-t border-ink pt-6">
+        <p className="font-mono text-[0.7rem] leading-relaxed tracking-wide text-muted">
+          THE INDUSTRIALISTS · AN INDUSTRIAL ARCHIVE · PROFILES RESEARCHED WITH
+          CLAUDE + WEB SEARCH · NARRATION BY ELEVENLABS
+        </p>
+      </footer>
     </div>
   );
+}
+
+function Hero({
+  total,
+  sectors,
+  people,
+}: {
+  total: number;
+  sectors: number;
+  people: { name: string; years: string }[];
+}) {
+  return (
+    <header className="relative isolate overflow-hidden pt-20 pb-12 sm:pt-28">
+      <NoiseLayer people={people} />
+
+      <p className="eyebrow">An Industrial Archive · Overlooked American Builders</p>
+
+      <h1 className="mt-5 max-w-4xl font-display text-6xl font-medium leading-[0.92] tracking-tight text-ink sm:text-8xl">
+        The Industrialists
+      </h1>
+
+      <p className="mt-4 font-mono text-xs tracking-[0.2em] text-muted">
+        REF · FP-ARCHIVE / VOL. I · {String(total).padStart(3, "0")} ENTRIES ·{" "}
+        {String(sectors).padStart(2, "0")} SECTIONS
+      </p>
+
+      <p className="mt-8 max-w-2xl font-body text-lg leading-relaxed text-ink/90">
+        A filing cabinet of the founders and operators who built enduring
+        American companies and were quietly forgotten. Each entry is researched
+        from primary and secondary sources, annotated with footnotes, and{" "}
+        <span className="italic text-accent">narrated aloud</span>.
+      </p>
+
+      <span className="mt-10 block h-px w-full bg-ink" />
+    </header>
+  );
+}
+
+/**
+ * A faint layer of names, dates, and ASCII fragments behind the title — the
+ * raw index, dissolving into the headline. Masked to fade toward the baseline.
+ */
+function NoiseLayer({ people }: { people: { name: string; years: string }[] }) {
+  const fragments = "／ · ▓ ░ ╳ — ┊ ╎ ▚ · [ ] ∴ ░ ▓ ※ ⌁ ·".split(" ");
+  const tokens: string[] = [];
+  people.forEach((p, i) => {
+    tokens.push(p.name.toUpperCase(), p.years, fragments[i % fragments.length]);
+  });
+  const line = tokens.join("  ");
+
+  return (
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-0 -z-10 select-none overflow-hidden font-mono text-[0.62rem] leading-5 tracking-wide text-ink/[0.06]"
+      style={{
+        maskImage:
+          "linear-gradient(to bottom, black, transparent 78%), radial-gradient(80% 60% at 30% 35%, transparent 35%, black 80%)",
+        WebkitMaskImage:
+          "linear-gradient(to bottom, black, transparent 78%), radial-gradient(80% 60% at 30% 35%, transparent 35%, black 80%)",
+        maskComposite: "intersect",
+        WebkitMaskComposite: "source-in",
+      }}
+    >
+      <div className="whitespace-pre-wrap break-words">{`${line}  ${line}  ${line}`}</div>
+    </div>
+  );
+}
+
+function TableOfContents({
+  groups,
+}: {
+  groups: { sector: string; people: unknown[] }[];
+}) {
+  return (
+    <nav
+      aria-label="Table of contents"
+      className="top-8 self-start md:sticky"
+    >
+      <p className="eyebrow mb-4 border-b border-rule pb-3">Contents</p>
+      <ol className="space-y-2.5">
+        {groups.map(({ sector, people }, i) => (
+          <li key={sector}>
+            <a
+              href={`#${slugifySector(sector)}`}
+              className="group flex items-baseline justify-between gap-3 font-mono text-[0.72rem] leading-snug tracking-wide text-muted transition-colors hover:text-accent"
+            >
+              <span className="flex min-w-0 gap-2">
+                <span className="text-accent/60 tabular-nums">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="truncate group-hover:underline">{sector}</span>
+              </span>
+              <span className="shrink-0 tabular-nums text-rule group-hover:text-accent">
+                {String(people.length).padStart(2, "0")}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
+
+function slugifySector(sector: string): string {
+  return sector.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 }

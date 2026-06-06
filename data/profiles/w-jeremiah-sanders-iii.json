@@ -1,0 +1,210 @@
+{
+  "slug": "w-jeremiah-sanders-iii",
+  "headline": "The South Side scrapper who built Silicon Valley's most defiant company — and spent three decades proving a magazine wrong for calling it the one least likely to survive.",
+  "overview": "Walter Jeremiah \"Jerry\" Sanders III did not invent the microprocessor, the integrated circuit, or the semiconductor business — Robert Noyce and Gordon Moore had done that across town. What Sanders invented was an attitude: the conviction that a chip company built by a salesman, not an engineer, with marketing flair instead of process leadership, could survive thirty years inside a foxhole next to Intel and come out the other side a Fortune 500 name [4][8]. When eight refugees from Fairchild Semiconductor incorporated Advanced Micro Devices on May 1, 1969, in Sunnyvale, California, the trade journal Innovation reportedly tagged it the start-up \"least likely to succeed\" of its era [2][3]. Sanders made the insult his founding mission. \"It just fired me up,\" he said decades later. \"I just wanted to prove them wrong\" [3].\n\nAMD's early genius was strategic humility dressed up as bravado. The company could not out-design the giants, so Sanders made it a \"second source\" — a manufacturer that legally produced other firms' chip designs to the same specification, giving big customers like the military and IBM the supply security of two vendors [4][8]. He guaranteed every part met full military specs, an audacious quality pledge for a no-name start-up, and he sold relentlessly. AMD shipped its first product, the Am9300 four-bit shift register, in 1969–70, posted its first $1-million quarter soon after, and went public in September 1972 at $15 a share, raising roughly $7.9 million [3][4].\n\nThe defining relationship of Sanders's career was with Intel — partner, licensor, and mortal enemy by turns. In 1976 the two companies signed a cross-licensing pact, and in 1982 Sanders negotiated a technology-exchange agreement that let AMD second-source Intel's iAPX86 microprocessors, the chips at the heart of the IBM PC [4][7]. When the x86 became the most valuable franchise in computing, Intel tried to slam the door: it cut off AMD after the 80286 and refused to hand over the 80386 designs [4][7]. Sanders sued. The ensuing arbitration ran from 1987 to a 1992 ruling that Intel had breached the contract, and a tangle of related suits dragged on until a sweeping 1995 settlement that finally secured AMD's right to build x86 chips [4][7]. \"Duplicity,\" Sanders called Intel's conduct — and he meant it as a war cry, not a complaint [7].\n\nNo executive in the Valley wore success more loudly. Sanders drove a Rolls-Royce and a Ferrari, kept homes in Bel Air, threw Hollywood-grade company parties, and dressed like a movie producer; he was, by any measure, the industry's most flamboyant CEO [1][2]. Yet the showmanship masked an unusually sincere creed about workers. His motto — \"People first, products and profits will follow\" — was printed for new hires, and he backed it: through the 1974 recession and the 1979 stagflation he refused mass layoffs, borrowing from Japanese practice rather than the Fairchild culture that had once cast him out [1][8]. When subordinates pushed cuts during the brutal 1984–85 chip slump, he reportedly snapped, \"I'm not going to preside over the dismantling of my life's work\" [5].\n\nThe second half of his tenure was a wager that AMD could finally beat Intel head-to-head rather than trail it. He famously declared \"Real men have fabs,\" insisting that owning leading-edge factories — not the fashionable \"fabless\" model — was the price of admission to the top tier [5]. The bet paid its grandest dividend in March 2000, when AMD's Athlon reached 1 gigahertz a few days ahead of Intel; Sanders compared it to Chuck Yeager breaking the sound barrier [6]. He handed the CEO title to Héctor Ruiz in April 2002 and stepped down as chairman in 2004, having run, for thirty-three years, the company the experts had buried at birth [3][7]."
+,
+  "earlyLife": "He was born September 12, 1936, in Chicago and raised largely by his paternal grandparents on the city's working-class South Side after his parents divorced — by his own account part of a sprawling family of which he was the eldest of many children [1][2]. The formative scene of his youth was not a laboratory but a street fight. At eighteen, defending a friend at a party, Sanders was beaten so savagely that he was given last rites at the hospital and survived only because a neighbor got him to help in time; he later said the experience taught him two permanent lessons — \"don't count on other people,\" and the supreme value of loyalty [1]. Both would echo through AMD's no-layoff culture and Sanders's own pugnacity for the rest of his life.\n\nHe escaped the South Side through engineering. A scholarship — linked to the Pullman railroad-car company — sent him to the University of Illinois at Urbana-Champaign, where he earned a bachelor's degree in electrical engineering in 1958 [1][2]. He started as an engineer at Douglas Aircraft, then moved to Motorola, and in 1961 joined Fairchild Semiconductor, the legendary outfit founded by the \"Traitorous Eight\" that seeded much of Silicon Valley [1][2]. There Sanders discovered he was less an engineer than a born salesman, rising through marketing to become one of Fairchild's star sales and marketing executives — and a protégé of Robert Noyce [2][4].\n\nThe turning point came in 1968, when Fairchild's parent installed a new management team led by C. Lester Hogan, poached from Motorola and trailed by an entourage the Valley nicknamed \"Hogan's Heroes.\" The conservative newcomers had no use for Sanders's loud suits and louder style, and they pushed him out [1][2]. \"My whole life has been about treating people fairly,\" he said of the firing, \"and I wasn't treated fairly\" [1][2]. When a group of his former Fairchild colleagues, planning their own start-up, asked him to come along, the cast-off marketer agreed on one non-negotiable condition: he would be president [2]."
+,
+  "timeline": [
+    { "year": "1936", "event": "Born September 12 in Chicago; raised by paternal grandparents on the South Side [1][2]." },
+    { "year": "1954", "event": "At about eighteen, nearly beaten to death at a party and given last rites; survives [1]." },
+    { "year": "1958", "event": "Earns a B.S. in electrical engineering from the University of Illinois at Urbana-Champaign [1][2]." },
+    { "year": "1961", "event": "Joins Fairchild Semiconductor as a sales engineer, becoming a marketing star and Noyce protégé [2][4]." },
+    { "year": "1968", "event": "Pushed out of Fairchild after C. Lester Hogan's \"Hogan's Heroes\" team clashes with his style [1][2]." },
+    { "year": "1969", "event": "Co-founds Advanced Micro Devices on May 1 in Sunnyvale, on condition he be president; AMD is incorporated with about $100,000 [2][3][4]." },
+    { "year": "1972", "event": "Takes AMD public in September at $15 a share, raising roughly $7.9 million [3][4]." },
+    { "year": "1975", "event": "Siemens AG invests about $30 million for a 20% stake; AMD scales internationally [4]." },
+    { "year": "1982", "event": "Signs a technology-exchange agreement letting AMD second-source Intel's iAPX86 microprocessors [4][7]." },
+    { "year": "1985", "event": "AMD reaches the Fortune 500 — vindicating the \"least likely to succeed\" jibe [3][4]." },
+    { "year": "1987", "event": "Files arbitration against Intel after Intel withholds the 80386 design; a 1992 ruling finds Intel in breach [4][7]." },
+    { "year": "1991", "event": "Launches the Am386, breaking Intel's grip on the x86 market; ships its millionth unit within months [4][7]." },
+    { "year": "1995", "event": "AMD and Intel settle all outstanding litigation, securing AMD's right to build x86 chips [4][7]." },
+    { "year": "2000", "event": "AMD's Athlon hits 1 GHz in March, narrowly beating Intel; Sanders likens it to Chuck Yeager breaking the sound barrier [6]." },
+    { "year": "2002", "event": "Hands the CEO title to Héctor Ruiz in April after 33 years; steps down as chairman in 2004 [3][7]." }
+  ],
+  "keyVentures": [
+    {
+      "title": "The second-source strategy",
+      "detail": "Unable to out-engineer Intel, Texas Instruments, or his old employer Fairchild, Sanders built AMD as a high-quality \"second source\" that legally manufactured other firms' chip designs and guaranteed every part met full military specifications — a credibility play that won risk-averse military and corporate buyers and bankrolled the company's first decade [4][8]."
+    },
+    {
+      "title": "The 1982 Intel technology-exchange agreement",
+      "detail": "Sanders negotiated the deal that let AMD second-source Intel's iAPX86 line, the brains of the IBM PC. It was both AMD's golden ticket and the seed of a decade of war once Intel decided it no longer wanted a partner on its most lucrative product [4][7]."
+    },
+    {
+      "title": "The x86 litigation and the Am386 (1987–1995)",
+      "detail": "When Intel withheld the 80386, Sanders sued, won a 1992 arbitration finding Intel in breach, and shipped a reverse-engineered Am386 that broke Intel's monopoly. A sweeping 1995 settlement finally locked in AMD's legal right to make x86 processors [4][7]."
+    },
+    {
+      "title": "\"Real men have fabs\" and the Athlon",
+      "detail": "Against the fashionable fabless model, Sanders bet AMD's future on owning leading-edge factories, including a major fab in Dresden, Germany. The wager peaked in March 2000 when the Athlon became the first x86 chip to reach 1 GHz, beating Intel to the milestone [5][6]."
+    },
+    {
+      "title": "The people-first culture",
+      "detail": "Sanders refused mass layoffs through the downturns of 1974 and 1979, gave every employee stock options when that was rare, and staged lavish, celebrity-studded company celebrations — making \"People first, products and profits will follow\" an operating policy, not a slogan [1][5][8]."
+    }
+  ],
+  "excerpts": [
+    {
+      "text": "Introduction of a PC processor capable of executing one billion clock cycles per second is our industry's equivalent of breaking the sound barrier. Just as the achievement of Chuck Yeager signaled the beginning of a new era in aviation, the 1GHz processor ushers in a new era of information technology.",
+      "attribution": "W.J. Sanders III, AMD news release announcing 1GHz Athlon shipments, March 6, 2000",
+      "sourceId": 6
+    },
+    {
+      "text": "My whole life has been about treating people fairly, and I wasn't treated fairly.",
+      "attribution": "Jerry Sanders on his 1968 firing from Fairchild, quoted in \"A Rags-to-Riches Manufacturing Story,\" IndustryWeek",
+      "sourceId": 1
+    },
+    {
+      "text": "It just fired me up. I just wanted to prove them wrong.",
+      "attribution": "Jerry Sanders on Innovation magazine calling AMD the start-up \"least likely to succeed,\" quoted in \"A Rags-to-Riches Manufacturing Story,\" IndustryWeek",
+      "sourceId": 1
+    }
+  ],
+  "lessons": [
+    {
+      "title": "Turn the underdog label into fuel",
+      "detail": "Being branded \"least likely to succeed\" could have demoralized a founder; Sanders made the insult his thesis statement for thirty years. A clear enemy and a public dare can organize a company better than any mission deck."
+    },
+    {
+      "title": "Sell your way in before you can engineer your way in",
+      "detail": "AMD survived its first decade not by inventing the best chips but by guaranteeing quality and supply as a second source. Distribution, trust, and salesmanship can buy the time a young company needs to eventually build real technology."
+    },
+    {
+      "title": "A contract with a giant is a strategy, not a safety net",
+      "detail": "The 1982 Intel deal made AMD and nearly broke it. Depending on a far larger partner for your most valuable product means betting that the partner never decides it wants the whole prize — a bet that landed Sanders in court for nearly a decade."
+    },
+    {
+      "title": "Loyalty can be an operating advantage",
+      "detail": "Sanders's no-layoff stance through downturns looked like sentiment but functioned as retention strategy in a Valley where engineers were the scarce resource. Treating people as long-term assets kept talent that competitors bled away."
+    }
+  ],
+  "legacy": "Jerry Sanders proved that there could be more than one survivor in the most concentrated, capital-hungry business in technology. For decades AMD was the only credible alternative to Intel in x86 microprocessors, and that single fact — one stubborn competitor refusing to die — kept prices down, choices open, and Intel honest in a market that touches nearly every PC and server on earth [4][7]. The legal precedents from his Intel wars helped establish that microcode and instruction-set compatibility could be fought over and licensed, shaping how the entire chip industry handles intellectual property [4][7]. The foundation he laid as a scrappy number-two is the one Lisa Su would later build into a genuine challenger.\n\nHe also embodied a Silicon Valley archetype that has since faded: the founder-as-impresario, more carnival barker than lab-coat technologist, who understood that a chip is also a brand and a company is also a show [1][2]. His \"real men have fabs\" creed reads today as a cautionary tale — AMD eventually spun off its costly factories into GlobalFoundries, conceding that the fabless model he scorned had largely won — yet his deeper conviction, that owning hard manufacturing capability is strategically precious, has roared back into fashion amid twenty-first-century chip shortages and national-security anxieties [5]. Beloved and ridiculed, generous and combative, Sanders left behind both a surviving company and a personal style that the industry has never quite reproduced [1][5]."
+,
+  "notableQuote": {
+    "quote": "People first, products and profits will follow.",
+    "context": "Jerry Sanders's founding management creed at AMD, given in printed form to new employees and cited as the company's people-first philosophy throughout his tenure."
+  },
+  "narrationScript": "Jerry Sanders grew up scrapping on Chicago's South Side, and once nearly died in a street fight that taught him to count on no one and to prize loyalty above all. He carried both lessons into Silicon Valley. After a star run as a salesman at Fairchild, a buttoned-up new management team fired him for being too loud, too flashy, too much. So in 1969 he co-founded Advanced Micro Devices — and when a trade magazine called it the start-up least likely to succeed, he made that insult his life's mission. AMD couldn't out-engineer Intel, so Sanders out-hustled it, selling quality and second-sourcing chips until the company reached the Fortune 500. Then came thirty years of war with Intel over the x86 chip, fought in court and in the market. Through it all he refused to lay people off, drove a Rolls-Royce, threw legendary parties, and insisted: people first, products and profits will follow. He ran the company nobody believed in for thirty-three years.",
+  "sources": [
+    {
+      "id": 1,
+      "type": "newspaper",
+      "title": "A Rags-to-Riches Manufacturing Story (IW Manufacturing Hall of Fame profile of Jerry Sanders)",
+      "publisher": "IndustryWeek",
+      "year": "2013",
+      "url": "https://www.industryweek.com/iw-manufacturing-hall-of-fame/article/21957593/a-rags-to-riches-manufacturing-story"
+    },
+    {
+      "id": 2,
+      "type": "web",
+      "title": "Jerry Sanders, cofounder of AMD",
+      "author": "Dave Farquhar",
+      "publisher": "The Silicon Underground",
+      "year": "2023",
+      "url": "https://dfarq.homeip.net/jerry-sanders-cofounder-of-amd/"
+    },
+    {
+      "id": 3,
+      "type": "archive",
+      "title": "Founding AMD by Jerry Sanders (first-person recollection, Mannerisms blog)",
+      "author": "Jerry Sanders / David Manners",
+      "publisher": "Electronics Weekly",
+      "year": "November 2007",
+      "url": "https://www.electronicsweekly.com/blogs/mannerisms/yarns/founding-amd-by-jerry-sanders-2007-11/"
+    },
+    {
+      "id": 4,
+      "type": "web",
+      "title": "History of Advanced Micro Devices, Inc.",
+      "publisher": "FundingUniverse (International Directory of Company Histories)",
+      "year": "2004",
+      "url": "https://www.fundinguniverse.com/company-histories/advanced-micro-devices-inc-history/"
+    },
+    {
+      "id": 5,
+      "type": "web",
+      "title": "Real Men Have Fabs: Jerry Sanders, TJ Rodgers, and AMD",
+      "author": "John East",
+      "publisher": "SemiWiki",
+      "year": "2023",
+      "url": "https://semiwiki.com/john-east/273760-real-men-have-fabs-jerry-sanders-tj-rodgers-and-amd/"
+    },
+    {
+      "id": 6,
+      "type": "archive",
+      "title": "AMD News Release: AMD Begins Shipments of 1GHz AMD Athlon Processors",
+      "author": "W.J. Sanders III (quoted)",
+      "publisher": "Advanced Micro Devices, Inc. (archived at CPU Shack)",
+      "year": "March 6, 2000",
+      "url": "https://www.cpushack.com/CIC/announce/2000/k7.1000.html"
+    },
+    {
+      "id": 7,
+      "type": "book",
+      "title": "The Intel Trinity: How Robert Noyce, Gordon Moore, and Andy Grove Built the World's Most Important Company",
+      "author": "Michael S. Malone",
+      "publisher": "HarperBusiness",
+      "year": "2014",
+      "url": "https://archive.org/details/inteltrinityhowr0000malo"
+    },
+    {
+      "id": 8,
+      "type": "archive",
+      "title": "Sanders and Advanced Micro Devices: The First Fifteen Years, 1969–1984 — A Case Study in Realizing the American Dream",
+      "author": "Thomas A. Skornia (AMD general counsel)",
+      "publisher": "Computer History Museum (catalog no. 102721657)",
+      "year": "2004"
+    },
+    {
+      "id": 9,
+      "type": "book",
+      "title": "Slingshot: AMD's Fight to Free an Industry from the Ruthless Grip of Intel",
+      "author": "Hector Ruiz",
+      "publisher": "Greenleaf Book Group Press",
+      "year": "2013"
+    },
+    {
+      "id": 10,
+      "type": "book",
+      "title": "The Big Score: The Billion Dollar Story of Silicon Valley",
+      "author": "Michael S. Malone",
+      "publisher": "Doubleday",
+      "year": "1985",
+      "url": "https://archive.org/details/bigscorebilli00malo"
+    }
+  ],
+  "furtherReading": [
+    {
+      "author": "Michael S. Malone",
+      "title": "The Intel Trinity: How Robert Noyce, Gordon Moore, and Andy Grove Built the World's Most Important Company",
+      "year": "2014",
+      "note": "The definitive Intel history, indispensable for understanding Sanders's lifelong rivalry and the x86 second-source wars from the other side of the trench."
+    },
+    {
+      "author": "Michael S. Malone",
+      "title": "The Big Score: The Billion Dollar Story of Silicon Valley",
+      "year": "1985",
+      "note": "A panoramic, contemporaneous portrait of the Valley's founding generation, with vivid early coverage of Sanders and AMD as the story was still unfolding."
+    },
+    {
+      "author": "Hector Ruiz",
+      "title": "Slingshot: AMD's Fight to Free an Industry from the Ruthless Grip of Intel",
+      "year": "2013",
+      "note": "An insider's account by Sanders's hand-picked successor as CEO, framing AMD's existential battle against Intel's dominance."
+    },
+    {
+      "author": "Thomas A. Skornia",
+      "title": "Sanders and Advanced Micro Devices: The First Fifteen Years, 1969–1984",
+      "year": "2004",
+      "note": "A primary, insider chronicle of AMD's first decade and a half by the company's own general counsel, held by the Computer History Museum."
+    },
+    {
+      "author": "Leslie Berlin",
+      "title": "The Man Behind the Microchip: Robert Noyce and the Invention of Silicon Valley",
+      "year": "2005",
+      "note": "The authoritative biography of Sanders's mentor and rival-maker, essential context for the Fairchild diaspora that produced both Intel and AMD."
+    }
+  ],
+  "generatedAt": "2026-06-06T00:00:00.000Z"
+}

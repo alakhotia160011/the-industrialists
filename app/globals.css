@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ── Industrial Archive · design tokens ───────────────────────────────────
+   Warm concrete grey ground, charcoal ink, steel-grey metadata, a patina-green
+   spine, signal green for interaction, and aged brass used sparingly. */
+
+@theme {
+  /* Surfaces */
+  --color-paper: #e6e4dd; /* warm concrete grey */
+  --color-paper-2: #dedbd1; /* card / inset surface */
+
+  /* Ink + metadata */
+  --color-ink: #1b1b19; /* charcoal */
+  --color-muted: #6e726b; /* steel grey — labels, dates, catalogue nos. */
+  --color-rule: #c6c3b7; /* steel hairline */
+
+  /* Patina + signal */
+  --color-accent: #3f6b57; /* aged bronze patina green */
+  --color-accent-soft: #6fa287; /* brighter signal green — hover / active */
+  --color-brass: #b08d57; /* aged brass — used sparingly */
 }
 
+/* Fonts come from next/font as runtime CSS variables on <html>, so map them
+   inline (utilities reference the live var rather than a build-time value). */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ground ──────────────────────────────────────────────────────────
+   Concrete with a faint, evenly spaced engineering dot-grid. */
+:root {
+  --dot: rgba(110, 114, 107, 0.22);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-paper);
+  background-image: radial-gradient(var(--dot) 1px, transparent 1.5px);
+  background-size: 24px 24px;
+  background-position: -1px -1px;
+  background-attachment: fixed;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-paper);
+}
+
+/* ── Repeated label treatment ─────────────────────────────────────────────
+   Monospaced, uppercase, steel grey — for eyebrows, catalogue refs, captions. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+/* Superscript footnote / citation markers. */
+.cite {
+  font-family: var(--font-mono);
+  vertical-align: super;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+/* A filing-card surface with an inset feel. */
+.filing-card {
+  background-color: color-mix(in srgb, var(--color-paper-2) 55%, transparent);
+}
+.filing-card:hover {
+  background-color: var(--color-paper-2);
+}
+
+/* Worn black-and-white portrait plate. */
+.portrait {
+  background-color: #cfccc0;
+  background-image:
+    radial-gradient(rgba(27, 27, 25, 0.18) 0.5px, transparent 0.6px),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.4), rgba(27, 27, 25, 0.16));
+  background-size:
+    3px 3px,
+    100% 100%;
+  filter: grayscale(1) contrast(1.05) sepia(0.12);
+  box-shadow: inset 0 0 0 1px rgba(27, 27, 25, 0.08);
 }
