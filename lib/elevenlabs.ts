@@ -3,10 +3,12 @@
 // ELEVENLABS_VOICE_ID to use any voice from the Voice Library.
 const DEFAULT_VOICE_ID = "onwK4e9ZLuTAKqWW03F9";
 
-// Narration is cached (server + browser), so latency is irrelevant, reach for
-// the newest, most expressive model. If it's unavailable for this account we
-// fall back to the stable flagship below.
-const DEFAULT_MODEL_ID = "eleven_v3";
+// Speed-optimized model: turbo v2.5 keeps the deep documentary voice but
+// synthesizes a full script in a few seconds rather than ~30s (eleven_v3 is
+// far more expressive but too slow for on-demand generation). Override with
+// ELEVENLABS_MODEL_ID. If turbo is unavailable for this account we fall back
+// to the stable flagship below.
+const DEFAULT_MODEL_ID = "eleven_turbo_v2_5";
 const FALLBACK_MODEL_ID = "eleven_multilingual_v2";
 
 /**
