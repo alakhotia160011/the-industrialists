@@ -43,7 +43,7 @@ export type SourceType =
 export type Source = {
   /** Stable numeric id used for inline [n] references. */
   id: number;
-  /** What kind of source this is — drives how it's rendered in the bibliography. */
+  /** What kind of source this is, drives how it's rendered in the bibliography. */
   type: SourceType;
   /** Title of the work (book), article, or document. */
   title: string;
@@ -55,7 +55,7 @@ export type Source = {
   year?: string;
   /** Page, chapter, or volume reference (e.g. "pp. 447–460", "ch. 12"). */
   pages?: string;
-  /** Optional — books and physical archives often have no stable URL. */
+  /** Optional, books and physical archives often have no stable URL. */
   url?: string;
 };
 
@@ -93,7 +93,7 @@ export type Profile = {
   notableQuote: Quote | null;
   /** Verbatim passages from books/newspapers that bring the record to life. */
   excerpts?: Excerpt[];
-  /** Canonical books on the subject — the scholarly shelf. */
+  /** Canonical books on the subject, the scholarly shelf. */
   furtherReading?: FurtherReading[];
   /** Conversational 60–90s script written to be read aloud. */
   narrationScript: string;

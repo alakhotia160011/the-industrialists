@@ -87,11 +87,11 @@ function Hero({
 }
 
 /**
- * A faint layer of names, dates, and ASCII fragments behind the title — the
+ * A faint layer of names, dates, and ASCII fragments behind the title, the
  * raw index, dissolving into the headline. Masked to fade toward the baseline.
  */
 function NoiseLayer({ people }: { people: { name: string; years: string }[] }) {
-  const fragments = "／ · ▓ ░ ╳ — ┊ ╎ ▚ · [ ] ∴ ░ ▓ ※ ⌁ ·".split(" ");
+  const fragments = "／ · ▓ ░ ╳ ┊ ╎ ▚ · [ ] ∴ ░ ▓ ※ ⌁ ·".split(" ");
   const tokens: string[] = [];
   people.forEach((p, i) => {
     tokens.push(p.name.toUpperCase(), p.years, fragments[i % fragments.length]);

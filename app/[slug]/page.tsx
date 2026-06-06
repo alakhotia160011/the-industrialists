@@ -21,9 +21,9 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { slug } = await props.params;
   const person = getPerson(slug);
-  if (!person) return { title: "Not found — The Industrialists" };
+  if (!person) return { title: "Not found · The Industrialists" };
   return {
-    title: `${person.name} — The Industrialists`,
+    title: `${person.name} · The Industrialists`,
     description: `${person.name}, ${person.company} (${person.years}).`,
   };
 }
@@ -52,7 +52,7 @@ export default async function ProfilePage(props: PageProps<"/[slug]">) {
         </span>
       </nav>
 
-      {/* Header — filing card masthead */}
+      {/* Header, filing card masthead */}
       <header className="border-b border-ink pt-8 pb-8">
         <p className="eyebrow">{person.sector}</p>
         <div className="mt-3 flex items-start gap-5">
@@ -184,8 +184,8 @@ export default async function ProfilePage(props: PageProps<"/[slug]">) {
                     <p className="text-ink">
                       <span className="italic">{b.title}</span>
                       <span className="text-muted">
-                        {" "}
-                        — {b.author}
+                        {", "}
+                        {b.author}
                         {b.year ? ` (${b.year})` : ""}
                       </span>
                     </p>
@@ -263,10 +263,10 @@ function ExcerptBlock({
       <figcaption className="mt-2 font-mono text-xs uppercase tracking-[0.12em] text-muted">
         {src ? (
           <a href={`#source-${src.id}`} className="hover:text-accent">
-            — {excerpt.attribution}
+            {excerpt.attribution}
           </a>
         ) : (
-          <>— {excerpt.attribution}</>
+          <>{excerpt.attribution}</>
         )}
       </figcaption>
     </figure>
@@ -305,7 +305,7 @@ function SourceCitation({ source: s }: { source: Source }) {
       ) : (
         <span className="text-ink">{titleEl}</span>
       )}
-      {meta ? ` — ${meta}` : ""}
+      {meta ? `, ${meta}` : ""}
     </span>
   );
 }

@@ -68,7 +68,7 @@ function loadPortraits(): Map<string, string> {
       if (m) portraitIndex.set(m[1], file);
     }
   } catch {
-    // no portraits dir yet — everyone uses the monogram
+    // no portraits dir yet, everyone uses the monogram
   }
   return portraitIndex;
 }

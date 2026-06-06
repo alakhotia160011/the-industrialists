@@ -2,9 +2,9 @@
 // Deep-research profile generator.
 //
 // For each industrialist this runs TWO Claude calls:
-//   1. Research  — claude-opus-4-8 + server-side web_search, doing several rounds
+//   1. Research, claude-opus-4-8 + server-side web_search, doing several rounds
 //                  of searching and producing a sourced dossier.
-//   2. Structure — claude-opus-4-8 (no tools) with output_config.format, turning the
+//   2. Structure, claude-opus-4-8 (no tools) with output_config.format, turning the
 //                  dossier into the exact data/profiles/<slug>.json shape, with
 //                  inline [n] citations tied to a numbered sources list.
 //
@@ -62,7 +62,7 @@ const PROFILE_SCHEMA = {
     overview: {
       type: "string",
       description:
-        "4–6 substantial paragraphs (separated by blank lines) covering who they were, what they built, how they ran it, the conflicts and controversies, and why it mattered. Draw on the named biographies and archival reporting in the dossier — specific, concrete, and analytical, not a Wikipedia summary. Use inline [n] citations on every factual claim.",
+        "4–6 substantial paragraphs (separated by blank lines) covering who they were, what they built, how they ran it, the conflicts and controversies, and why it mattered. Draw on the named biographies and archival reporting in the dossier, specific, concrete, and analytical, not a Wikipedia summary. Use inline [n] citations on every factual claim.",
     },
     earlyLife: {
       type: "string",
@@ -136,7 +136,7 @@ const PROFILE_SCHEMA = {
     furtherReading: {
       type: "array",
       description:
-        "3–6 canonical books/works on the subject — the definitive biographies and business histories a serious reader should pick up. Real titles only.",
+        "3–6 canonical books/works on the subject, the definitive biographies and business histories a serious reader should pick up. Real titles only.",
       items: {
         type: "object",
         additionalProperties: false,
@@ -166,7 +166,7 @@ const PROFILE_SCHEMA = {
     narrationScript: {
       type: "string",
       description:
-        "A warm, conversational 130–180 word script written to be READ ALOUD by a narrator. No citation markers, no headers — just flowing spoken prose that tells their story.",
+        "A warm, conversational 130–180 word script written to be READ ALOUD by a narrator. No citation markers, no headers, just flowing spoken prose that tells their story.",
     },
     sources: {
       type: "array",
@@ -212,10 +212,10 @@ const PROFILE_SCHEMA = {
 // ---- Step 1: research with web search -----------------------------------------
 
 async function research(person) {
-  const userQuery = `Research ${person.name}, the leader/founder associated with ${person.company} (active ${person.years}). I am building a deeply-sourced, archival-quality profile for a serious audience. The bar is a long-form magazine feature or a chapter in a business history — NOT a Wikipedia rewrite. Wikipedia/Britannica/History.com may be used only as a starting index to find better sources; they should be the minority of what you cite.
+  const userQuery = `Research ${person.name}, the leader/founder associated with ${person.company} (active ${person.years}). I am building a deeply-sourced, archival-quality profile for a serious audience. The bar is a long-form magazine feature or a chapter in a business history, NOT a Wikipedia rewrite. Wikipedia/Britannica/History.com may be used only as a starting index to find better sources; they should be the minority of what you cite.
 
-Do MANY rounds of web searches — keep going until you have genuinely deep material. Deliberately seek out, and cite, these source types:
-- DEFINITIVE BIOGRAPHIES & BUSINESS HISTORIES: Identify the canonical book(s) on this person/company (author, title, year). Search Google Books, archive.org, and reviews for specific facts, anecdotes, and VERBATIM quotable passages — capture exact wording with author/title/page where you can.
+Do MANY rounds of web searches, keep going until you have genuinely deep material. Deliberately seek out, and cite, these source types:
+- DEFINITIVE BIOGRAPHIES & BUSINESS HISTORIES: Identify the canonical book(s) on this person/company (author, title, year). Search Google Books, archive.org, and reviews for specific facts, anecdotes, and VERBATIM quotable passages, capture exact wording with author/title/page where you can.
 - NEWSPAPER & PERIODICAL ARCHIVES: contemporary coverage from The New York Times, Wall Street Journal, regional papers, Time, Fortune, BusinessWeek, trade press, etc. Note the publication and DATE. Look for the original announcement of key events, profiles written in their lifetime, and the obituary.
 - PRIMARY SOURCES: the subject's own memoirs/letters/speeches/shareholder letters, company archives, museum/historical-society holdings, oral histories, SEC filings, patents, court records.
 - SCHOLARSHIP: business-school cases (HBS), academic journal articles, university press histories.
@@ -223,11 +223,11 @@ Do MANY rounds of web searches — keep going until you have genuinely deep mate
 For each, capture: who said it, when, where, and the exact citation (author, work, year, page or date). Prefer specific, concrete, vivid detail (named people, dollar figures, dates, scenes, conflicts) over generalities.
 
 Investigate thoroughly:
-- Family, formation, education, and the path to ${person.company} — with telling specifics
+- Family, formation, education, and the path to ${person.company}, with telling specifics
 - The founding/takeover story and how they actually built and ran the company day to day
 - A detailed chronological timeline (specific years/dates)
 - Signature ventures, products, innovations, financial and strategic moves
-- Leadership style, rivalries, controversies, failures, labor/legal battles — and how they handled them
+- Leadership style, rivalries, controversies, failures, labor/legal battles, and how they handled them
 - Genuine VERBATIM quotations (theirs and contemporaries' about them), each with its exact source
 - 2–4 striking quotable passages from books or newspaper archives, copied exactly
 - Legacy and how historians assess them today
@@ -235,8 +235,8 @@ Investigate thoroughly:
 Cross-check dates against the (${person.years}) hint and flag any discrepancy.
 
 Write a thorough research dossier organized by the topics above. Mark verbatim quotations clearly as QUOTE with full attribution. At the very end include two sections:
-"## SOURCES": a numbered list, each line "Type | Author | Title | Publisher | Year/Date | Page | URL" (use "—" for unknown fields). Type ∈ {book, newspaper, journal, archive, interview, web}. Only include URLs you actually retrieved.
-"## FURTHER READING": the 3–6 canonical books on this subject (author — title — year — one-line note), even if you couldn't read them in full.`;
+"## SOURCES": a numbered list, each line "Type | Author | Title | Publisher | Year/Date | Page | URL" (use "n/a" for unknown fields). Type ∈ {book, newspaper, journal, archive, interview, web}. Only include URLs you actually retrieved.
+"## FURTHER READING": the 3–6 canonical books on this subject (author, title, year, one-line note), even if you couldn't read them in full.`;
 
   const messages = [{ role: "user", content: userQuery }];
   const discovered = [];
@@ -284,25 +284,26 @@ Write a thorough research dossier organized by the topics above. Mark verbatim q
 async function structure(person, dossier, discovered) {
   const dedupSources = [...new Map(discovered.map((s) => [s.url, s])).values()]
     .slice(0, 40)
-    .map((s, i) => `${i + 1}. ${s.title} — ${s.url}`)
+    .map((s, i) => `${i + 1}. ${s.title}, ${s.url}`)
     .join("\n");
 
   const prompt = `Below is a research dossier on ${person.name} (${person.company}, ${person.years}). Turn it into a structured profile that exactly matches the required JSON schema.
 
 Rules:
 - Base every claim on the dossier. Do not invent facts, quotations, page numbers, or sources. If something is uncertain, omit it.
-- Write with depth and specificity — concrete names, dates, dollar figures, scenes, and conflicts. This should read like a business-history chapter, not an encyclopedia stub.
+- Write with depth and specificity, concrete names, dates, dollar figures, scenes, and conflicts. This should read like a business-history chapter, not an encyclopedia stub.
 - Add inline citations as [n] markers in overview, earlyLife, timeline events, keyVentures details, and legacy. Each [n] must correspond to an entry in the "sources" array with the SAME id.
 - Build the "sources" array from the dossier's SOURCES section: set each entry's "type" (book/newspaper/journal/archive/interview/web) and fill author/publisher/year/pages whenever the dossier gives them. Include "url" only when it is a real URL. Renumber 1..N and make inline markers match. Favor books, newspaper archives, and primary documents.
 - "excerpts": copy 2–4 VERBATIM passages from the dossier (marked QUOTE) exactly as written, with full attribution and the matching sourceId. Never paraphrase into this field.
 - "furtherReading": the canonical books from the dossier's FURTHER READING section.
 - "narrationScript" must be plain spoken prose (no [n] markers, no headings).
+- Never use em dashes (Unicode U+2014). Use commas, colons, parentheses, or separate sentences instead.
 
 === RESEARCH DOSSIER ===
 ${dossier}
 
 === URLS DISCOVERED DURING SEARCH (backstop for the sources array) ===
-${dedupSources || "(none captured separately — use the dossier's SOURCES section)"}
+${dedupSources || "(none captured separately, use the dossier's SOURCES section)"}
 `;
 
   const resp = await withRetry(() =>

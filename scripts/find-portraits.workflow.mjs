@@ -205,13 +205,13 @@ const RESULT = {
 function prompt(p) {
   const ext = '<jpg|png>'
   return `Find a real PHOTOGRAPHIC PORTRAIT of this specific person and download it:
-${p.name} — ${p.company} (active ${p.years}; ${p.sector}).
+${p.name}, ${p.company} (active ${p.years}; ${p.sector}).
 
 This person currently has no portrait. Your job: locate one genuine portrait image OF THIS EXACT PERSON and save it to disk, or conclude none is findable.
 
 SEARCH widely with WebSearch / WebFetch: Wikimedia Commons (try full name + middle names + alternate spellings), Find A Grave, the Library of Congress (loc.gov), archive.org, university/historical-society/museum collections, company histories, and newspaper/obituary photos (NYT, etc.). For pre-1929 figures a public-domain photo usually exists somewhere.
 
-IDENTITY IS CRITICAL — do not paste the wrong face:
+IDENTITY IS CRITICAL, do not paste the wrong face:
 - The image must depict THIS individual (matching era, role at ${p.company}, and life dates). Cross-check captions and dates.
 - REJECT: a different person who merely shares the name; a relative (father/son/spouse) with the same surname; company logos, buildings, products, group shots where the person isn't identifiable; book covers; statues unless clearly captioned as them.
 - If you cannot CONFIRM identity, treat it as not found.

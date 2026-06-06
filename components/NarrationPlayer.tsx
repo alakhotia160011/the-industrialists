@@ -114,7 +114,7 @@ export default function NarrationPlayer({
       </button>
       {status === "error" && (
         <span className="font-mono text-[0.7rem] tracking-wide text-brass">
-          Couldn&apos;t generate audio — check the ElevenLabs key.
+          Couldn&apos;t generate audio, check the ElevenLabs key.
         </span>
       )}
     </div>

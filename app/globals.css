@@ -11,13 +11,13 @@
 
   /* Ink + metadata */
   --color-ink: #1b1b19; /* charcoal */
-  --color-muted: #6e726b; /* steel grey — labels, dates, catalogue nos. */
+  --color-muted: #6e726b; /* steel grey, labels, dates, catalogue nos. */
   --color-rule: #c6c3b7; /* steel hairline */
 
   /* Patina + signal */
   --color-accent: #3f6b57; /* aged bronze patina green */
-  --color-accent-soft: #6fa287; /* brighter signal green — hover / active */
-  --color-brass: #b08d57; /* aged brass — used sparingly */
+  --color-accent-soft: #6fa287; /* brighter signal green, hover / active */
+  --color-brass: #b08d57; /* aged brass, used sparingly */
 }
 
 /* Fonts come from next/font as runtime CSS variables on <html>, so map them
@@ -57,7 +57,7 @@ body {
 }
 
 /* ── Repeated label treatment ─────────────────────────────────────────────
-   Monospaced, uppercase, steel grey — for eyebrows, catalogue refs, captions. */
+   Monospaced, uppercase, steel grey, for eyebrows, catalogue refs, captions. */
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.7rem;

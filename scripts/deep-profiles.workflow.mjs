@@ -418,7 +418,7 @@ const PEOPLE = [
 
 const people = (Array.isArray(args) && args.length) ? args : PEOPLE
 if (!people.length) {
-  log('No people passed via args — nothing to do.')
+  log('No people passed via args, nothing to do.')
   return { written: 0 }
 }
 
@@ -437,14 +437,14 @@ const STATUS = {
 }
 
 function prompt(p) {
-  return `You are writing an ARCHIVAL-QUALITY profile of ${p.name}, the leader/founder associated with ${p.company} (active ${p.years}; sector: ${p.sector}). The bar is a chapter in a serious business history or a long-form magazine feature — emphatically NOT a Wikipedia rewrite.
+  return `You are writing an ARCHIVAL-QUALITY profile of ${p.name}, the leader/founder associated with ${p.company} (active ${p.years}; sector: ${p.sector}). The bar is a chapter in a serious business history or a long-form magazine feature, emphatically NOT a Wikipedia rewrite.
 
-STEP 0 — SKIP IF DONE. Run with Bash: \`node -e "const p=require('${ROOT}/data/profiles/${p.slug}.json'); if((p.sources||[]).length>=8 && (p.excerpts||[]).length>=2) {console.log('DONE',p.sources.length,p.excerpts.length)} else process.exit(3)"\` . If it prints DONE, the profile already exists and meets the bar — STOP immediately and return {slug, ok:true, sources, books (count type:book), excerpts, note:"already existed"} without researching or writing anything. Otherwise continue.
+STEP 0, SKIP IF DONE. Run with Bash: \`node -e "const p=require('${ROOT}/data/profiles/${p.slug}.json'); if((p.sources||[]).length>=8 && (p.excerpts||[]).length>=2) {console.log('DONE',p.sources.length,p.excerpts.length)} else process.exit(3)"\` . If it prints DONE, the profile already exists and meets the bar, STOP immediately and return {slug, ok:true, sources, books (count type:book), excerpts, note:"already existed"} without researching or writing anything. Otherwise continue.
 
-STEP 1 — STUDY THE TEMPLATE.
+STEP 1, STUDY THE TEMPLATE.
 Read ${ROOT}/data/profiles/henry-ford.json. That hand-written file is the EXACT JSON shape, citation style, depth, tone, and source quality you must match. Mirror its structure precisely.
 
-STEP 2 — RESEARCH DEEPLY with the WebSearch and WebFetch tools. Do MANY rounds — keep going until you have genuinely deep, specific material. Deliberately hunt these source types and CITE them:
+STEP 2, RESEARCH DEEPLY with the WebSearch and WebFetch tools. Do MANY rounds, keep going until you have genuinely deep, specific material. Deliberately hunt these source types and CITE them:
 - DEFINITIVE BOOKS: the canonical biography/biographies and company histories (author, title, year, publisher). Search Google Books and archive.org for specific facts, scenes, dollar figures, and VERBATIM quotable passages. Capture exact wording + page when you can.
 - NEWSPAPER / PERIODICAL ARCHIVES: contemporary coverage (NYT, WSJ, regional papers, Time, Fortune, BusinessWeek, trade press), with the publication name and DATE. Find the original announcement of key events, a lifetime profile, and the obituary.
 - PRIMARY / ARCHIVE SOURCES: the subject's own memoirs/letters/speeches/shareholder letters, company or museum/historical-society archives, oral histories, SEC filings, patents, court records.
@@ -462,9 +462,11 @@ HARD REQUIREMENTS for the finished profile:
 
 ACCURACY: Do NOT invent facts, quotations, page numbers, sources, or URLs. If something is uncertain, omit it. Cross-check dates against the (${p.years}) hint.
 
-STEP 3 — WRITE THE FILE. Write the complete JSON to ${ROOT}/data/profiles/${p.slug}.json using the Write tool. It must be valid JSON matching the template's shape.
+PUNCTUATION: Never use em dashes (Unicode U+2014) in any prose you write. Use commas, colons, parentheses, or separate sentences instead. (Verbatim quotations in "excerpts" are exempt: copy those exactly as the source has them.)
 
-STEP 4 — VERIFY. Run \`node -e "JSON.parse(require('fs').readFileSync('${ROOT}/data/profiles/${p.slug}.json','utf8'))"\` with Bash to confirm it parses; also confirm every inline [n] and every excerpt.sourceId maps to a sources id. Fix and rewrite if not.
+STEP 3, WRITE THE FILE. Write the complete JSON to ${ROOT}/data/profiles/${p.slug}.json using the Write tool. It must be valid JSON matching the template's shape.
+
+STEP 4, VERIFY. Run \`node -e "JSON.parse(require('fs').readFileSync('${ROOT}/data/profiles/${p.slug}.json','utf8'))"\` with Bash to confirm it parses; also confirm every inline [n] and every excerpt.sourceId maps to a sources id. Fix and rewrite if not.
 
 Then return the status object describing what you wrote.`
 }

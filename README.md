@@ -1,4 +1,4 @@
-# The Industrialists — Founder Profiles
+# The Industrialists, Founder Profiles
 
 A [founderprofiles.ai](https://www.founderprofiles.ai/)-style archive of ~80 American
 industrialists. Each profile is **researched from the live web with citations** and can
@@ -34,7 +34,7 @@ node scripts/generate-profiles.mjs --force       # regenerate existing
 node scripts/generate-profiles.mjs --model claude-sonnet-4-6   # cost-down lever
 ```
 
-Output lands in `data/profiles/<slug>.json` and is read at build time — **commit it**
+Output lands in `data/profiles/<slug>.json` and is read at build time, **commit it**
 so the deployed site needs no Anthropic key.
 
 Each run does two Claude calls per person: a web-search research turn that builds a
@@ -51,14 +51,14 @@ and **primary/archive sources** (memoirs, letters, court records, museum holding
 HBS cases). Wikipedia/Britannica are allowed only as an index to find better sources.
 Each profile carries:
 
-- **`sources[]`** — typed citations (`book` · `newspaper` · `journal` · `archive` ·
+- **`sources[]`**, typed citations (`book` · `newspaper` · `journal` · `archive` ·
   `interview` · `web`) with `author`, `publisher`, `year`, and `pages` where known;
   `url` is optional (books/archives often have none).
-- **`excerpts[]`** — 2–4 *verbatim* passages from books/newspapers, each with an
+- **`excerpts[]`**, 2–4 *verbatim* passages from books/newspapers, each with an
   attribution and a `sourceId` link.
-- **`furtherReading[]`** — the canonical books on the subject (author, title, year, note).
+- **`furtherReading[]`**, the canonical books on the subject (author, title, year, note).
 
-`data/profiles/henry-ford.json` is the hand-written **gold-standard template** — the
+`data/profiles/henry-ford.json` is the hand-written **gold-standard template**, the
 shape, citation style, and depth every generated profile is held to.
 
 The `Profile`/`Source` shapes live in `lib/types.ts`; new fields are optional so older
@@ -70,7 +70,7 @@ profiles still render.
 research agent per industrialist. Each agent uses live `WebSearch`/`WebFetch`, reads the
 Ford template for format, writes its own `data/profiles/<slug>.json`, and self-validates
 the JSON. The people list is inlined in the script (everyone except Ford), so it runs
-with no `ANTHROPIC_API_KEY` — useful when only the placeholder key is present. Launch it
+with no `ANTHROPIC_API_KEY`, useful when only the placeholder key is present. Launch it
 from Claude Code with the `Workflow` tool pointed at that script; progress shows under
 `/workflows`.
 
@@ -89,7 +89,7 @@ vercel --prod
 
 Set `ELEVENLABS_API_KEY` (and any optional vars) in the Vercel dashboard. Add a Vercel
 Blob store for durable narration caching. `ANTHROPIC_API_KEY` is **not** needed in
-production — profiles are pre-generated and committed.
+production, profiles are pre-generated and committed.
 
 ## Layout
 

@@ -1,9 +1,9 @@
-// "Daniel" — a deep, authoritative British narrator (Attenborough-adjacent),
+// "Daniel", a deep, authoritative British narrator (Attenborough-adjacent),
 // the best documentary fit among ElevenLabs' premade voices. Override with
 // ELEVENLABS_VOICE_ID to use any voice from the Voice Library.
 const DEFAULT_VOICE_ID = "onwK4e9ZLuTAKqWW03F9";
 
-// Narration is cached (server + browser), so latency is irrelevant — reach for
+// Narration is cached (server + browser), so latency is irrelevant, reach for
 // the newest, most expressive model. If it's unavailable for this account we
 // fall back to the stable flagship below.
 const DEFAULT_MODEL_ID = "eleven_v3";
@@ -26,7 +26,7 @@ export async function synthesize(text: string): Promise<ArrayBuffer> {
     return await tts(text, voiceId, primaryModel, apiKey);
   } catch (err) {
     if (primaryModel !== FALLBACK_MODEL_ID) {
-      // The newest model may be gated or reject these settings — fall back to
+      // The newest model may be gated or reject these settings, fall back to
       // the proven flagship so narration still works.
       console.warn(
         `ElevenLabs model "${primaryModel}" failed; falling back to ${FALLBACK_MODEL_ID}.`,

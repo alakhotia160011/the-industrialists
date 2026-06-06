@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Fetch a real lead portrait for each industrialist from Wikipedia and save it
 // to public/portraits/<slug>.<ext>. Validates that the matched article is about
-// a PERSON (not a company/brand) so we never show the wrong face — anyone we
+// a PERSON (not a company/brand) so we never show the wrong face, anyone we
 // can't confidently match keeps the monogram placeholder.
 //
 //   node scripts/fetch-portraits.mjs --dry --sample   # preview matches, no writes
@@ -72,7 +72,7 @@ async function getJSON(url, tries = 4) {
   return null;
 }
 
-// Use the summary thumbnail (~320px, tens of KB) — plenty for a ~96px portrait
+// Use the summary thumbnail (~320px, tens of KB), plenty for a ~96px portrait
 // and always valid. The full-res original can be multiple MB, so it's only a
 // last resort when no thumbnail exists.
 function pickImage(s) {
@@ -119,7 +119,7 @@ async function searchTitles(name, company) {
 
 // Returns {title, desc, img} for the best person-match, or null.
 // A match must: be about a person (not a company), have its SURNAME in the
-// article title, and mention a distinctive word from the company — so an
+// article title, and mention a distinctive word from the company, so an
 // unrelated person who merely shares a name can't slip through.
 async function findPortrait(name, company) {
   const { surname, all: nameToks, hasJr, hasSr } = nameParts(name);
