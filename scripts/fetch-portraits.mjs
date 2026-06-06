@@ -29,9 +29,14 @@ const UA = "the-industrialists/1.0 (educational profile archive; ary.lakhotia@gm
 const OVERRIDES = {
   "james-b-duke": "James Buchanan Duke", // not his daughter Doris Duke
   "adolphus-busch": "Adolphus Busch", // founder, not grandson "Adolphus Busch III"
+  "adolph-zukor": "Adolph Zukor", // Paramount founder
+  "robert-g-mondavi": "Robert Mondavi", // winemaker, not his wife Margrit Mondavi
   "f-kenneth-iverson": null, // Nucor CEO has no article; avoid the APL computer scientist
   "charles-h-steinway": null, // no individual article; avoid wrong Steinway
   "whitney-stevens": null, // no article; avoid actor "Dan Stevens"
+  "henry-g-walter-jr": null, // no article; avoid art collector "Henry Walters"
+  "charles-l-coughlin": null, // no article; avoid radio priest "Charles Coughlin"
+  "william-b-graham": null, // no article; avoid "William Graham Sumner"
 };
 const BAD =
   /(company|companies|corporation|incorporated|\binc\b|\bco\b|brand|manufacturer|conglomerate|holding|organization|magazine|\bfilm\b|album|song|building|logo|trademark|winery|brewery|\bship\b|vessel|liberty ship|aircraft|locomotive|\baward\b|\bprize\b|school|university|college|\bpark\b|stadium|street|river|bridge|hospital|library|\bact\b|law)/i;
@@ -88,13 +93,28 @@ async function searchOne(query) {
   return (d?.query?.search || []).map((s) => s.title);
 }
 
-// Name-first (so famous people surface above their company), then name+company
-// as a fallback for the obscure ones. Merged, de-duped, name-only results first.
+// "John R. Sculley" → "John Sculley": middle initials and Jr/Sr/III suffixes
+// derail Wikipedia search (it returned John Mayer for "John R. Sculley").
+function cleanName(name) {
+  return name
+    .replace(/\(.*?\)/g, " ")
+    .replace(/[.,]/g, " ")
+    .split(/\s+/)
+    .filter((t) => t.length > 1 && !/^(jr|sr|ii|iii|iv)$/i.test(t))
+    .join(" ");
+}
+
+// Cleaned name first (best recall for people with middle initials), then the
+// raw name, then name+company for the obscure ones. Merged, de-duped, in order.
 async function searchTitles(name, company) {
-  const a = await searchOne(name);
-  await sleep(120);
-  const b = await searchOne(`${name} ${company}`);
-  return [...new Set([...a, ...b])].slice(0, 8);
+  const cleaned = cleanName(name);
+  const queries = [...new Set([cleaned, name, `${cleaned} ${company}`])];
+  const titles = [];
+  for (const q of queries) {
+    titles.push(...(await searchOne(q)));
+    await sleep(120);
+  }
+  return [...new Set(titles)].slice(0, 10);
 }
 
 // Returns {title, desc, img} for the best person-match, or null.
