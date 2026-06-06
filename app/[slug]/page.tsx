@@ -7,6 +7,7 @@ import {
   getAllPeople,
   getCatalogNumber,
   getPerson,
+  getPortrait,
   getProfile,
 } from "@/lib/profiles";
 import type { Source, Excerpt } from "@/lib/types";
@@ -55,7 +56,11 @@ export default async function ProfilePage(props: PageProps<"/[slug]">) {
       <header className="border-b border-ink pt-8 pb-8">
         <p className="eyebrow">{person.sector}</p>
         <div className="mt-3 flex items-start gap-5">
-          <Portrait name={person.name} className="hidden h-24 w-20 sm:flex" />
+          <Portrait
+            name={person.name}
+            src={getPortrait(person.slug)}
+            className="hidden h-24 w-20 sm:flex"
+          />
           <div className="min-w-0">
             <h1 className="font-display text-4xl leading-[0.98] tracking-tight text-ink sm:text-6xl">
               {person.name}

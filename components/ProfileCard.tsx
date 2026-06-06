@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Portrait from "@/components/Portrait";
-import { getCatalogNumber } from "@/lib/profiles";
+import { getCatalogNumber, getPortrait } from "@/lib/profiles";
 import type { Industrialist } from "@/lib/types";
 
 export default function ProfileCard({ person }: { person: Industrialist }) {
@@ -9,7 +9,7 @@ export default function ProfileCard({ person }: { person: Industrialist }) {
       href={`/${person.slug}`}
       className="filing-card group flex gap-4 border border-rule p-4 transition-colors duration-200 hover:border-accent"
     >
-      <Portrait name={person.name} className="h-20 w-16" />
+      <Portrait name={person.name} src={getPortrait(person.slug)} className="h-20 w-16" />
 
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="flex items-start justify-between gap-2">

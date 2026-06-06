@@ -53,3 +53,28 @@ export function getProfile(slug: string): Profile | null {
 export function hasProfile(slug: string): boolean {
   return fs.existsSync(path.join(profilesDir, `${slug}.json`));
 }
+
+// Portraits fetched from Wikipedia live in public/portraits/<slug>.<ext>.
+// Indexed once at build time; slugs with no real photo fall back to a monogram.
+const portraitsDir = path.join(process.cwd(), "public", "portraits");
+let portraitIndex: Map<string, string> | null = null;
+
+function loadPortraits(): Map<string, string> {
+  if (portraitIndex) return portraitIndex;
+  portraitIndex = new Map();
+  try {
+    for (const file of fs.readdirSync(portraitsDir)) {
+      const m = file.match(/^(.+)\.(jpe?g|png|webp)$/i);
+      if (m) portraitIndex.set(m[1], file);
+    }
+  } catch {
+    // no portraits dir yet — everyone uses the monogram
+  }
+  return portraitIndex;
+}
+
+/** Public path to a person's portrait image, or null if none was found. */
+export function getPortrait(slug: string): string | null {
+  const file = loadPortraits().get(slug);
+  return file ? `/portraits/${file}` : null;
+}
