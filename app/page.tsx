@@ -40,12 +40,6 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="mt-16 border-t border-ink pt-6">
-        <p className="font-mono text-[0.7rem] leading-relaxed tracking-wide text-muted">
-          THE INDUSTRIALISTS · AN INDUSTRIAL ARCHIVE · PROFILES RESEARCHED WITH
-          CLAUDE + WEB SEARCH · NARRATION BY ELEVENLABS
-        </p>
-      </footer>
     </div>
   );
 }
